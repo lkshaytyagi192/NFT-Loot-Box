@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Loot Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NFT Loot Box 🎁</h1>
+            <button id="connect-wallet">Connect Wallet</button>
+        </header>
+
+        <section class="loot-box">
+            <h2>Loot Box Status</h2>
+            <p>Price: <span id="loot-price">0</span> APT</p>
+            <p>Opened: <span id="opened-boxes">0</span> / <span id="total-boxes">0</span></p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="open-box" disabled>Open Loot Box</button>
+            <p id="last-nft" class="success-message"></p>
+            <p id="error" class="error-message"></p>
+        </section>
+
+        <section class="rewards">
+            <h2>Your Rewards</h2>
+            <p>Boxes Opened: <span id="user-boxes">0</span></p>
+            <div class="nft-grid" id="nft-collection"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
