@@ -1,0 +1,15 @@
+[package]
+name = "loot-box"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule="0xceb4b278a0af7463792576eb620136c8f4833fb143eb9bca9ccea3358a896441"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
